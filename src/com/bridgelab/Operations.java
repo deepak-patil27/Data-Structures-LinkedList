@@ -1,4 +1,5 @@
 package com.bridgelab;
+import java.util.*;
 
 public class Operations {
 	public static void addDataAtStart() {
@@ -6,7 +7,8 @@ public class Operations {
 		linkedList.push(70);
 		linkedList.push(30);
 		linkedList.push(56);
-		linkedList.print();		
+		linkedList.print();	
+		
 	}
 	
 	public static void addDataAtEnd() {
@@ -15,6 +17,20 @@ public class Operations {
 		linkedList.append(30);
 		linkedList.append(70);
 		linkedList.print();
+		
+	}
+	
+	public static void insertInBetween() {
+        LinkedList linkedList = new LinkedList();
+        Node secondNode = linkedList.push(70);
+        Node firstNode = linkedList.push(56);
+        Node newNode= new Node(30);
+        System.out.println("Before:");
+        linkedList.print();
+        linkedList.insertInBetween(firstNode, newNode);
+        System.out.println();
+        System.out.println("after:");
+        linkedList.print();
 		
 	}
 

@@ -33,5 +33,26 @@ public class Operations {
         linkedList.print();
 		
 	}
+	
+	
+	public static void pop() {
+		LinkedList linkedlist = new LinkedList();
+		linkedlist.push(70);
+		linkedlist.push(30);
+		linkedlist.push(56);
+		System.out.println("Created Linkedlist:");
+		linkedlist.print();
+		System.out.println("\nDeleted first element in the LinkedList:");
+		linkedlist.pop();
+		linkedlist.print();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 
 }

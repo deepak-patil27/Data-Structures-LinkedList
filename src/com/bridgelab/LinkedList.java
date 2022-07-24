@@ -16,9 +16,9 @@ public class LinkedList {
 			newNode.next = temp;
 		}
 		return newNode;
-		
+
 	}
-	
+
 	public void append(int data) {
 		Node newNode = new Node (data);
 		if(head==null) 
@@ -30,23 +30,35 @@ public class LinkedList {
 		{
 			this.tail.next = newNode;
 			tail= newNode;
-			
+
 		}
-		
+
 	}
-	
+
 	public void insertInBetween(Node previousNode ,Node newNode){
-        Node tempNode = previousNode.next;
-        previousNode.next = newNode;
-        newNode.next = tempNode;
-		
+		Node tempNode = previousNode.next;
+		previousNode.next = newNode;
+		newNode.next = tempNode;
+
 	}
-	
+
 	public void pop(){
 		head = head.next;
 	}
 
-	
+	public void popLast() {
+		if(head == null) {
+			System.out.println("List is empty");
+		}
+              //Find Second last node
+		Node second_last = head;
+		while (second_last.next.next != null)
+			second_last = second_last.next;       
+		second_last.next = null;     //change next of second last
+		
+	}
+
+
 	public void print() {
 		if (head == null)
 		{

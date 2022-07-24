@@ -46,12 +46,19 @@ public class Operations {
 		linkedlist.pop();
 		linkedlist.print();
 		
-		
-		
-		
-		
-		
-		
+	}
+	
+	
+	public static void poplast() {
+		LinkedList linkedlist = new LinkedList();
+		linkedlist.push(70);
+		linkedlist.push(30);
+		linkedlist.push(56);
+		System.out.println("Created Linkedlist:");
+		linkedlist.print();
+		System.out.println("\nDeleted last element in the LinkedList:");
+		linkedlist.popLast();
+		linkedlist.print();
 		
 	}
 
